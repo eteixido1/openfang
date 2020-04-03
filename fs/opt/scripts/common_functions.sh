@@ -90,7 +90,7 @@ yellow_led() {
 		setgpioled $(nvram get 2860 yellow_led_pin) 0
 		;;
 	status)
-		status=$(getgpioled $(nvram get 2860 yellow_pin))
+		status=$(getgpioled $(nvram get 2860 yellow_led_pin))
 		case $status in
 		0)
 			echo "OFF"
